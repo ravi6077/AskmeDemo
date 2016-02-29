@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="TVH-ST-OKL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugv-B4-jkj">
+                    <rect key="frame" x="10" y="15" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="7DI-Ta-Vik"/>
+                        <constraint firstAttribute="height" constant="35" id="flX-ht-FWF"/>
+                    </constraints>
+                    <state key="normal" image="menu"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi NCR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXH-h7-SJg">
+                    <rect key="frame" x="53" y="22" width="185" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="EFO-cA-2ks"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-1l-uDO">
+                    <rect key="frame" x="270" y="15" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="VzC-Mz-BYa"/>
+                        <constraint firstAttribute="height" constant="35" id="XVB-pb-qFQ"/>
+                    </constraints>
+                    <state key="normal" image="search"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l67-fK-Vn9">
+                    <rect key="frame" x="320" y="15" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="Fms-Jb-ZD7"/>
+                        <constraint firstAttribute="height" constant="35" id="KNO-uS-rkm"/>
+                    </constraints>
+                    <state key="normal" image="cart"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725490196078" green="0.32941176470588235" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="l67-fK-Vn9" firstAttribute="leading" secondItem="aqh-1l-uDO" secondAttribute="trailing" constant="15" id="Frv-va-qj5"/>
+                <constraint firstItem="l67-fK-Vn9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="HL5-7o-kCe"/>
+                <constraint firstItem="Ugv-B4-jkj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Pdl-GJ-mRQ"/>
+                <constraint firstItem="aqh-1l-uDO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="YcY-Lu-uxe"/>
+                <constraint firstAttribute="trailing" secondItem="l67-fK-Vn9" secondAttribute="trailing" constant="20" id="fwv-bQ-7of"/>
+                <constraint firstItem="aqh-1l-uDO" firstAttribute="leading" secondItem="hXH-h7-SJg" secondAttribute="trailing" constant="32" id="h1I-Nl-H5J"/>
+                <constraint firstItem="hXH-h7-SJg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="53" id="iIG-nu-b7b"/>
+                <constraint firstItem="Ugv-B4-jkj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="v6n-YJ-Ggb"/>
+                <constraint firstItem="hXH-h7-SJg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="yud-nh-EXo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="241.5" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" width="27" height="27"/>
+        <image name="menu" width="15" height="15"/>
+        <image name="search" width="19" height="19"/>
+    </resources>
+</document>
